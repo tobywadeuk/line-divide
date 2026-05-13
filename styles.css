@@ -1,3 +1,22 @@
-.answer{
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  background: #faf9f7;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 60px 32px;
+}
+
+.answer {
+  width: 100%;
+  max-width: 640px;
+  font-family: Georgia, serif;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #1c1c1c;
 }
