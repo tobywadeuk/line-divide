@@ -1,4 +1,4 @@
-* {
+*, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -6,10 +6,11 @@
 
 body {
   background: #faf9f7;
+  color: #1c1c1c;
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  padding: 60px 32px;
+  padding: 60px 32px 100px;
 }
 
 .answer {
@@ -18,5 +19,33 @@ body {
   font-family: Georgia, serif;
   font-size: 1.15rem;
   line-height: 1.8;
-  color: #1c1c1c;
+}
+
+.copy-btn {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  padding: 10px 20px;
+  font-family: -apple-system, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #faf9f7;
+  background: #1c1c1c;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  opacity: 0.85;
+  transition: opacity 0.2s, transform 0.1s;
+}
+
+.copy-btn:hover { opacity: 1; }
+.copy-btn:active { transform: scale(0.97); }
+
+@media (prefers-color-scheme: dark) {
+  body { background: #141413; color: #e8e4de; }
+  .copy-btn { background: #e8e4de; color: #141413; }
+}
+
+@media (prefers-color-scheme: dark) and (prefers-reduced-motion: no-preference) {
+  .copy-btn { transition: opacity 0.2s, transform 0.1s; }
 }
