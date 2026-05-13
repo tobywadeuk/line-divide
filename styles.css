@@ -21,6 +21,13 @@ body {
   line-height: 1.8;
 }
 
+.copied-toast {
+  font-family: -apple-system, sans-serif;
+  font-size: 0.8rem;
+  color: rgba(74, 160, 100, 0.75);
+  margin-bottom: 32px;
+}
+
 .copy-btn {
   position: fixed;
   bottom: 28px;
@@ -44,6 +51,7 @@ body {
 @media (prefers-color-scheme: dark) {
   body { background: #141413; color: #e8e4de; }
   .copy-btn { background: #e8e4de; color: #141413; }
+  .copied-toast { color: rgba(100, 200, 130, 0.7); }
 }
 
 @media (prefers-color-scheme: dark) and (prefers-reduced-motion: no-preference) {
