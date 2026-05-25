@@ -11,40 +11,49 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 60px 32px 100px;
-}
-
-.answer {
-  width: 100%;
-  max-width: 640px;
-  font-family: Georgia, serif;
-  font-size: 1.15rem;
-  line-height: 1.8;
+  padding: 48px 32px 80px;
 }
 
 .copied-toast {
   width: 100%;
   max-width: 640px;
   font-family: -apple-system, sans-serif;
-  font-size: 0.8rem;
-  color: rgba(74, 160, 100, 0.75);
-  margin-bottom: 12px;
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
+  color: rgba(74, 160, 100, 0.8);
+  margin-bottom: 20px;
+}
+
+.answer {
+  width: 100%;
+  max-width: 640px;
+  font-family: Georgia, serif;
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.answer p {
+  margin-bottom: 1.5em;
+}
+
+.answer p:last-child {
+  margin-bottom: 0;
 }
 
 .copy-btn {
   position: fixed;
-  bottom: 28px;
-  right: 28px;
-  padding: 10px 20px;
+  bottom: 24px;
+  right: 24px;
+  padding: 9px 18px;
   font-family: -apple-system, sans-serif;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 500;
   color: #faf9f7;
   background: #1c1c1c;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  opacity: 0.85;
+  opacity: 0.75;
   transition: opacity 0.2s, transform 0.1s;
 }
 
@@ -55,8 +64,4 @@ body {
   body { background: #141413; color: #e8e4de; }
   .copy-btn { background: #e8e4de; color: #141413; }
   .copied-toast { color: rgba(100, 200, 130, 0.7); }
-}
-
-@media (prefers-color-scheme: dark) and (prefers-reduced-motion: no-preference) {
-  .copy-btn { transition: opacity 0.2s, transform 0.1s; }
 }

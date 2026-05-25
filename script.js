@@ -13,7 +13,7 @@ const sentences = safe
   .map((s) => s.replace(/\x00/g, ".").trim())
   .filter(Boolean);
 
-div.innerHTML = sentences.join("<br><br>");
+div.innerHTML = sentences.map(s => `<p>${s}</p>`).join("");
 
 const toast = document.createElement("p");
 toast.className = "copied-toast";
